@@ -16,8 +16,8 @@ pipeline {
 
         stage('Package') {
             steps {
-                sh 'echo "Build Number: ${BUILD_NUMBER}" > build-info.txt'
-                sh 'echo "Timestamp: $(date)" >> build-info.txt'
+                bat 'echo "Build Number: ${BUILD_NUMBER}" > build-info.txt'
+                bat 'echo "Timestamp: $(date)" >> build-info.txt'
             }
         }
     }
